@@ -131,7 +131,8 @@ html {
 body {
   background-color: var(--clr-bg);
   color: var(--clr-text);
-  font-family: var(--ff-body);
+  /* old font-family */
+  /* font-family: var(--ff-body); */
   font-size: var(--fs-base);
   line-height: 1.6;
   overflow-x: hidden;
@@ -158,7 +159,8 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: inherit;
+  /* old font-family */
+  /* font-family: inherit; */
 }
 
 /* ── NOISE OVERLAY ── */
@@ -236,7 +238,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .preloader-logo {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: 3rem;
   font-weight: 800;
   line-height: 1;
@@ -327,7 +330,8 @@ body.cursor-hidden .cursor-ring {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-weight: 800;
   font-size: 0.85rem;
   color: #000;
@@ -335,7 +339,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .logo-text {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: -0.02em;
@@ -423,7 +428,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .mobile-nav-link {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-2xl);
   font-weight: var(--fw-black);
   color: var(--clr-text-muted);
@@ -451,7 +457,8 @@ body.cursor-hidden .cursor-ring {
   gap: 0.6rem;
   padding: 0.85rem 1.8rem;
   border-radius: var(--radius-full);
-  font-family: var(--ff-body);
+  /* old font-family */
+  /* font-family: var(--ff-body); */
   font-size: var(--fs-sm);
   font-weight: var(--fw-semibold);
   letter-spacing: 0.02em;
@@ -545,7 +552,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .section-title {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-2xl);
   font-weight: var(--fw-black);
   line-height: 1.05;
@@ -660,7 +668,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .hero-headline {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: clamp(3.5rem, 7vw, 7rem);
   font-weight: var(--fw-black);
   line-height: 1.0;
@@ -741,7 +750,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .stat-number {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-xl);
   font-weight: var(--fw-black);
   color: var(--clr-text);
@@ -750,7 +760,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .stat-suffix {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-xl);
   font-weight: var(--fw-black);
   color: var(--clr-accent);
@@ -850,7 +861,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .marquee-inner span {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-lg);
   font-weight: var(--fw-bold);
   color: var(--clr-text);
@@ -1038,7 +1050,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .g5-wordmark {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  /* old font-family */
+  /* font-family: 'Georgia', 'Times New Roman', serif; */
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -1095,7 +1108,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .overlay-title {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-xl);
   font-weight: var(--fw-black);
   color: white;
@@ -1129,7 +1143,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .portfolio-name {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-weight: var(--fw-bold);
   font-size: var(--fs-base);
   letter-spacing: -0.02em;
@@ -1291,7 +1306,8 @@ body.cursor-hidden .cursor-ring {
 
 .fa-type {
   position: absolute;
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: 5rem;
   font-weight: 800;
   color: rgba(255,255,255,0.12);
@@ -1315,7 +1331,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .fc-title {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-lg);
   font-weight: var(--fw-black);
   letter-spacing: -0.03em;
@@ -1404,7 +1421,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .about-headline {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-3xl);
   font-weight: var(--fw-black);
   line-height: 1.05;
@@ -1430,7 +1448,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .about-body {
-  font-family: var(--ff-serif);
+  /* old font-family */
+  /* font-family: var(--ff-serif); */
   font-size: var(--fs-xl);
   font-style: italic;
   color: var(--clr-text);
@@ -1571,12 +1590,14 @@ body.cursor-hidden .cursor-ring {
   font-size: var(--fs-xs);
   color: var(--clr-text-dim);
   font-weight: var(--fw-semibold);
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   letter-spacing: 0.05em;
 }
 
 .service-title {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: var(--fs-xl);
   font-weight: var(--fw-black);
   letter-spacing: -0.03em;
@@ -1684,7 +1705,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .quote-mark {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  /* old font-family */
+  /* font-family: 'Georgia', 'Times New Roman', serif; */
   font-size: 7rem;
   line-height: 1;
   color: var(--clr-accent);
@@ -1697,7 +1719,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .testimonial-quote {
-  font-family: var(--ff-serif);
+  /* old font-family */
+  /* font-family: var(--ff-serif); */
   font-size: var(--fs-lg);
   font-style: italic;
   color: var(--clr-text);
@@ -1818,7 +1841,8 @@ body.cursor-hidden .cursor-ring {
 }
 
 .cta-headline {
-  font-family: var(--ff-heading);
+  /* old font-family */
+  /* font-family: var(--ff-heading); */
   font-size: clamp(2.5rem, 5.5vw, 5rem);
   font-weight: var(--fw-black);
   letter-spacing: -0.04em;
@@ -2177,3 +2201,32 @@ body.cursor-hidden .cursor-ring {
 /* .preloader-logo .logo-s → color: var(--clr-accent)  → #E6FF00 auto */
 
 /* ── END NEW THEME v2 OVERRIDES ═══════════════════════════════ */
+
+/* ── NEW TYPOGRAPHY SYSTEM ── */
+h1, h2, h3, h4, h5, h6,
+.hero-headline,
+.section-title,
+.overlay-title,
+.fc-title,
+.about-headline,
+.service-title,
+.cta-headline,
+.preloader-logo,
+.logo-mark,
+.logo-text,
+.grand5-hero-logo,
+.g5-wordmark,
+.stat-number,
+.mobile-nav-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+p, button, .btn, .nav-link, .nav-cta, label, .description, .feature-desc, body, .about-body, .service-desc, .fc-desc, .overlay-desc, .about-detail, .testimonial-quote, .cta-sub, .footer-tagline, .small-label, .section-tag, .eyebrow-text, .stat-label, .service-tags span, .overlay-tag, .portfolio-cat, .portfolio-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+b, strong, .fw-medium, .fw-semibold, .fw-bold {
+  font-weight: 500;
+}

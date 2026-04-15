@@ -57,6 +57,10 @@ function initPreloader() {
 
   requestAnimationFrame(updateBar);
 
+  setTimeout(() => {
+    finishPreloader();
+  }, 3000);
+
   function finishPreloader() {
     gsap.to(preloader, {
       opacity: 0,
@@ -287,9 +291,9 @@ function initHeroCanvas() {
    HERO ANIMATIONS
 ────────────────────────────────────────────── */
 function initHeroAnimations() {
-  const words = qsAll('.hero-headline .word');
+  const words = qsAll('.hero-headline .hero-line');
   const eyebrow = qs('.hero-eyebrow');
-  const heroSub = qs('#hero-sub');
+  const heroSubheadline = qs('.hero-subheadline');
   const heroCta = qs('#hero-cta');
   const heroStats = qs('#hero-stats');
   const scrollHint = qs('.hero-scroll-hint');
@@ -306,7 +310,7 @@ function initHeroAnimations() {
       stagger: 0.06,
       ease: 'power4.out'
     }, '-=0.3')
-    .to(heroSub, { y: 0, opacity: 1, duration: 0.6 }, '-=0.4')
+    .to(heroSubheadline, { y: 0, opacity: 1, duration: 0.6 }, '-=0.4')
     .to(heroCta, { y: 0, opacity: 1, duration: 0.6 }, '-=0.4')
     .to(heroStats, { y: 0, opacity: 1, duration: 0.6 }, '-=0.3')
     .to(scrollHint, { opacity: 1, duration: 0.8 }, '-=0.2');

@@ -294,13 +294,13 @@ body.cursor-hidden .cursor-ring {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   transition: padding var(--transition-base), background var(--transition-base), border-color var(--transition-base);
   border-bottom: 1px solid transparent;
 }
 
 #navbar.scrolled {
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   background: rgba(8,8,8,0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -765,7 +765,18 @@ body.cursor-hidden .cursor-ring {
   max-width: 500px;
 }
 
+.hero-subheadline {
+  margin-top: 20px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
 .hero-cta-group {
+  margin-top: 35px;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -829,20 +840,10 @@ body.cursor-hidden .cursor-ring {
 }
 
 .hero-scroll-hint {
-  /* position: absolute;
-  bottom: 2.5rem;
-  left: var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  opacity: 0;
-  z-index: 2; */
-
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: var(--space-lg);
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2076,6 +2077,10 @@ body.cursor-hidden .cursor-ring {
     text-shadow: 0 0 20px rgba(143,101,251,0.2);
   }
 
+  .hero-subheadline {
+    font-size: 16px;
+  }
+
   .hero-blob {
     top: 10%;
     right: -20%;
@@ -2129,7 +2134,7 @@ body.cursor-hidden .cursor-ring {
 
   .featured-card { flex: 0 0 300px; }
 
-  .hero-scroll-hint { left: 1.5rem; }
+  .hero-scroll-hint { bottom: 2rem; }
 
   .section-title { font-size: clamp(2rem, 8vw, 3rem); }
 

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ES Design Lab — A premium graphic design agency crafting brands that go deeper and last longer. Branding, Visual Design, and Video Editing." />
+  <meta name="description"
+    content="ES Design Lab — A premium graphic design agency crafting brands that go deeper and last longer. Branding, Visual Design, and Video Editing." />
   <title>ES Design Lab — Design That Goes Deeper</title>
 
   <!-- Fonts -->
@@ -13,7 +15,9 @@
   <!-- old font-family
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" /> 
   -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -25,6 +29,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ══════════════ PRELOADER ══════════════ -->
@@ -99,21 +104,17 @@
           <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <!-- OLD v1: stop-color:#E8A43A (amber) & stop-color:#F97316 (orange) -->
             <!-- Previous: #E6FF00 (neon yellow) & #8E2DE2 (bright purple) -->
-            <stop offset="0%"   style="stop-color:#FEF102;stop-opacity:1" /> <!-- NEW: Yellow #FEF102 -->
+            <stop offset="0%" style="stop-color:#FEF102;stop-opacity:1" /> <!-- NEW: Yellow #FEF102 -->
             <stop offset="100%" style="stop-color:#8F65FB;stop-opacity:1" /> <!-- NEW: Purple #8F65FB -->
           </linearGradient>
         </defs>
         <path id="blob-path" fill="url(#blobGrad)">
-          <animate attributeName="d"
-            dur="8s"
-            repeatCount="indefinite"
-            values="
+          <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
               M320,240Q280,280,240,320Q200,360,140,330Q80,300,60,240Q40,180,70,120Q100,60,160,50Q220,40,280,70Q340,100,350,160Q360,220,320,240Z;
               M310,250Q260,300,210,330Q160,360,110,320Q60,280,55,220Q50,160,90,110Q130,60,185,55Q240,50,290,80Q340,110,345,170Q350,230,310,250Z;
               M330,230Q290,270,250,310Q210,350,155,330Q100,310,70,255Q40,200,65,145Q90,90,150,65Q210,40,270,65Q330,90,345,150Q360,210,330,230Z;
               M320,240Q280,280,240,320Q200,360,140,330Q80,300,60,240Q40,180,70,120Q100,60,160,50Q220,40,280,70Q340,100,350,160Q360,220,320,240Z
-            "
-          />
+            " />
         </path>
       </svg>
     </div>
@@ -130,12 +131,16 @@
         <span class="hero-line" style="color: #8F65FB;">Drives Real Results</span>
       </h1>
 
-      <p class="hero-subheadline">Branding, visual design, and video editing crafted to make your business clear, consistent, and impossible to ignore.</p>
+      <p class="hero-subheadline">Branding, visual design, and video editing crafted to make your business clear,
+        consistent, and impossible to ignore.</p>
 
       <div class="hero-cta-group" id="hero-cta">
         <a href="#work" class="btn btn-primary" id="hero-see-work">
           <span>See Our Work</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </a>
         <a href="#about" class="btn btn-ghost" id="hero-our-story">Our Story</a>
       </div>
@@ -235,8 +240,9 @@
             <div class="portfolio-img-wrap">
               <!-- OLD v1 BG: linear-gradient(135deg, #2a1a0e 0%, #6b3a1a 50%, #c45e1a 100%) -->
               <div class="portfolio-placeholder grand5-placeholder"
-                   data-v1-style="background: linear-gradient(135deg, #2a1a0e 0%, #6b3a1a 50%, #c45e1a 100%)"
-                   style="background: linear-gradient(135deg, #0d0a1a 0%, #1e0f3d 60%, #6A0DAD 100%);"> <!-- NEW v2: dark to vivid purple -->
+                data-v1-style="background: linear-gradient(135deg, #2a1a0e 0%, #6b3a1a 50%, #c45e1a 100%)"
+                style="background: linear-gradient(135deg, #0d0a1a 0%, #1e0f3d 60%, #6A0DAD 100%);">
+                <!-- NEW v2: dark to vivid purple -->
                 <!-- Grand5 Logo -->
                 <div class="grand5-hero-logo">
                   <div class="g5-emblem">
@@ -271,12 +277,15 @@
             <div class="portfolio-img-wrap">
               <!-- OLD v1 BG: linear-gradient(135deg, #8b1a3a 0%, #c0204d 50%, #e83e6c 100%) -->
               <div class="portfolio-placeholder"
-                   data-v1-style="background: linear-gradient(135deg, #8b1a3a 0%, #c0204d 50%, #e83e6c 100%)"
-                   style="background: linear-gradient(135deg, #0A0A0A 0%, #1a0a1a 50%, #2d0d2d 100%);"> <!-- NEW v2: deep dark plum -->
+                data-v1-style="background: linear-gradient(135deg, #8b1a3a 0%, #c0204d 50%, #e83e6c 100%)"
+                style="background: linear-gradient(135deg, #0A0A0A 0%, #1a0a1a 50%, #2d0d2d 100%);">
+                <!-- NEW v2: deep dark plum -->
                 <div class="placeholder-logo acrowell-logo">
                   <svg viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <text x="5" y="50" font-family="'Helvetica Neue', sans-serif" font-size="38" font-weight="800" fill="white" letter-spacing="-1">ACROWELL</text>
-                    <text x="5" y="65" font-family="'Helvetica Neue', sans-serif" font-size="10" font-weight="400" fill="rgba(255,255,255,0.7)" letter-spacing="4">Dermacare</text>
+                    <text x="5" y="50" font-family="'Helvetica Neue', sans-serif" font-size="38" font-weight="800"
+                      fill="white" letter-spacing="-1">ACROWELL</text>
+                    <text x="5" y="65" font-family="'Helvetica Neue', sans-serif" font-size="10" font-weight="400"
+                      fill="rgba(255,255,255,0.7)" letter-spacing="4">Dermacare</text>
                   </svg>
                 </div>
               </div>
@@ -303,8 +312,9 @@
             <div class="portfolio-img-wrap">
               <!-- OLD v1 BG: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #4a4a6a 100%) -->
               <div class="portfolio-placeholder"
-                   data-v1-style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #4a4a6a 100%)"
-                   style="background: linear-gradient(135deg, #0A0A0A 0%, #0d0d1a 50%, #111130 100%);"> <!-- NEW v2: deep dark-blue -->
+                data-v1-style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #4a4a6a 100%)"
+                style="background: linear-gradient(135deg, #0A0A0A 0%, #0d0d1a 50%, #111130 100%);">
+                <!-- NEW v2: deep dark-blue -->
                 <div class="placeholder-content fashion-content">
                   <div class="fashion-frame">
                     <div class="fashion-inner"></div>
@@ -335,16 +345,20 @@
             <div class="portfolio-img-wrap">
               <!-- OLD v1 BG: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 50%, #ffffff 100%) [kept — contrast card] -->
               <div class="portfolio-placeholder"
-                   data-v1-style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 50%, #ffffff 100%)"
-                   style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 50%, #ffffff 100%);"> <!-- NEW v2: kept light for contrast -->
+                data-v1-style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 50%, #ffffff 100%)"
+                style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 50%, #ffffff 100%);">
+                <!-- NEW v2: kept light for contrast -->
                 <div class="placeholder-logo sign-logo">
                   <div class="sign-circle">
                     <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="80" cy="80" r="70" stroke="#1a1a1a" stroke-width="3" fill="white"/>
-                      <circle cx="80" cy="80" r="58" stroke="#1a1a1a" stroke-width="1" fill="none"/>
-                      <text x="80" y="70" font-family="'Helvetica Neue', sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="middle">The Sign &amp;</text>
-                      <text x="80" y="87" font-family="'Helvetica Neue', sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="middle">Print Factory</text>
-                      <text x="80" y="105" font-family="'Helvetica Neue', sans-serif" font-size="8" font-weight="400" fill="#666" text-anchor="middle" letter-spacing="2">SIGNAGE EXPERTS</text>
+                      <circle cx="80" cy="80" r="70" stroke="#1a1a1a" stroke-width="3" fill="white" />
+                      <circle cx="80" cy="80" r="58" stroke="#1a1a1a" stroke-width="1" fill="none" />
+                      <text x="80" y="70" font-family="'Helvetica Neue', sans-serif" font-size="13" font-weight="700"
+                        fill="#1a1a1a" text-anchor="middle">The Sign &amp;</text>
+                      <text x="80" y="87" font-family="'Helvetica Neue', sans-serif" font-size="13" font-weight="700"
+                        fill="#1a1a1a" text-anchor="middle">Print Factory</text>
+                      <text x="80" y="105" font-family="'Helvetica Neue', sans-serif" font-size="8" font-weight="400"
+                        fill="#666" text-anchor="middle" letter-spacing="2">SIGNAGE EXPERTS</text>
                     </svg>
                   </div>
                 </div>
@@ -372,7 +386,10 @@
       <div class="portfolio-footer">
         <a href="#contact" class="btn btn-outline" id="view-all-results">
           <span>More Results from the Lab</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </a>
       </div>
     </div>
@@ -428,7 +445,8 @@
             <span>is tested for clarity, built for trust, and designed to move people.</span>
           </p>
           <p class="about-detail">
-            We dive deep into the roles and define what truly matters — so your audience instantly gets who you are and why you matter. The result? A brand that feels confident, consistent, and impossible to ignore.
+            We dive deep into the roles and define what truly matters — so your audience instantly gets who you are and
+            why you matter. The result? A brand that feels confident, consistent, and impossible to ignore.
           </p>
           <div class="about-badges">
             <div class="badge">Clarity First</div>
@@ -462,24 +480,29 @@
           <div class="service-card-top">
             <div class="service-icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M10 16C10 12.686 12.686 10 16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M16 22C19.314 22 22 19.314 22 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5" />
+                <path d="M10 16C10 12.686 12.686 10 16 10" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M16 22C19.314 22 22 19.314 22 16" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="16" cy="16" r="3" fill="currentColor" />
               </svg>
             </div>
             <span class="service-num">01</span>
           </div>
           <h3 class="service-title">Branding</h3>
-          <p class="service-desc">Clarity builds trust. We make your brand unmistakable — so your audience instantly gets who you are and why you matter. The result? A brand that feels confident and impossible to ignore.</p>
+          <p class="service-desc">Clarity builds trust. We make your brand unmistakable — so your audience instantly
+            gets who you are and why you matter. The result? A brand that feels confident and impossible to ignore.</p>
           <div class="service-tags">
             <span>Logo Design</span>
             <span>Brand Guidelines</span>
             <span>Visual Identity</span>
           </div>
-          <a href="#contact" class="service-cta" id="svc-brand-explore">
+          <a href="branding.html"target="_blank" class="service-cta" id="svc-brand-explore">
             <span>Explore More</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </a>
           <div class="service-card-bg" aria-hidden="true"></div>
         </div>
@@ -488,26 +511,29 @@
           <div class="service-card-top">
             <div class="service-icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 14H28" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
-                <circle cx="13" cy="10" r="1.5" fill="currentColor"/>
-                <rect x="8" y="18" width="6" height="4" rx="1" fill="currentColor" opacity="0.5"/>
-                <rect x="18" y="18" width="6" height="4" rx="1" fill="currentColor" opacity="0.5"/>
+                <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M4 14H28" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="8" cy="10" r="1.5" fill="currentColor" />
+                <circle cx="13" cy="10" r="1.5" fill="currentColor" />
+                <rect x="8" y="18" width="6" height="4" rx="1" fill="currentColor" opacity="0.5" />
+                <rect x="18" y="18" width="6" height="4" rx="1" fill="currentColor" opacity="0.5" />
               </svg>
             </div>
             <span class="service-num">02</span>
           </div>
           <h3 class="service-title">Visual Design</h3>
-          <p class="service-desc">Clarity builds trust. We make your brand unmistakable. We also drive the roles and define what truly matters — so your audience instantly gets who you are and why you matter.</p>
+          <p class="service-desc">Clarity builds trust. We make your brand unmistakable. We also drive the roles and
+            define what truly matters — so your audience instantly gets who you are and why you matter.</p>
           <div class="service-tags">
             <span>UI/UX Design</span>
             <span>Print Design</span>
             <span>Social Media</span>
           </div>
-          <a href="#contact" class="service-cta" id="svc-visual-explore">
+          <a href="visualdesign.html"target="_blank" class ="service-cta" id="svc-visual-explore">
             <span>Explore More</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </a>
           <div class="service-card-bg" aria-hidden="true"></div>
         </div>
@@ -516,23 +542,27 @@
           <div class="service-card-top">
             <div class="service-icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <rect x="2" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M22 13L30 9V23L22 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="11" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="2" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M22 13L30 9V23L22 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="11" cy="16" r="3" stroke="currentColor" stroke-width="1.5" />
               </svg>
             </div>
             <span class="service-num">03</span>
           </div>
           <h3 class="service-title">Video Editing</h3>
-          <p class="service-desc">Clarity builds trust. We make your brand unmistakable. We also dive deep into the roles and define what truly matters — so your audience instantly connects with your story.</p>
+          <p class="service-desc">Clarity builds trust. We make your brand unmistakable. We also dive deep into the
+            roles and define what truly matters — so your audience instantly connects with your story.</p>
           <div class="service-tags">
             <span>Brand Films</span>
             <span>Motion Graphics</span>
             <span>Reels & Ads</span>
           </div>
-          <a href="#contact" class="service-cta" id="svc-video-explore">
+          <a href="visualdesign.html#video-edit" class="service-cta" id="svc-video-explore">
             <span>Explore More</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </a>
           <div class="service-card-bg" aria-hidden="true"></div>
         </div>
@@ -550,23 +580,64 @@
     </div>
     <div class="container">
       <div class="testimonial-inner">
-        <div class="quote-mark" aria-hidden="true">"</div>
-        <blockquote class="testimonial-quote" id="testimonial-quote">
-          I'm delighted to recommend ES Design Lab, who has been the creative force behind our brand's visual identity. They designed our logo with exceptional clarity, creativity, and a deep understanding of what our brand stands for. What truly sets apart is her dedication. She goes beyond just delivering designs — she listens, understands the brand's vision, and puts her heart into every detail. Her commitment to perfection, timely delivery, and willingness to iterate until the design feels just right makes her an absolute pleasure to work with.
-        </blockquote>
-        <div class="testimonial-author">
-          <div class="author-avatar" aria-hidden="true">PK</div>
-          <div class="author-info">
-            <strong>Preety Kohar</strong>
-            <span>Co-Founder, Hoza</span>
+        <div class="testimonial-slider" id="testimonial-slider">
+          <button class="testi-arrow testi-arrow-left" id="testi-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="testi-arrow testi-arrow-right" id="testi-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="testimonial-slides">
+            <div class="testimonial-slide active">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-quote">
+                I'm delighted to recommend ES Design Lab, who has been the creative force behind our brand's visual
+                identity. They designed our logo with exceptional clarity, creativity, and a deep understanding of what
+                our brand stands for. What truly sets apart is her dedication. She goes beyond just delivering designs —
+                she listens, understands the brand's vision, and puts her heart into every detail. Her commitment to
+                perfection, timely delivery, and willingness to iterate until the design feels just right makes her an
+                absolute pleasure to work with.
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">PK</div>
+                <div class="author-info">
+                  <strong>Preety Kohar</strong>
+                  <span>Co-Founder, Hoza</span>
+                </div>
+                <div class="author-stars" aria-label="5 star rating">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-quote">
+                I've had the pleasure of working with ES Design Lab for over 2 years, and I can confidently attest to
+                their exceptional skills, dedication, and passion for design. The team is highly talented and driven,
+                consistently bringing an innovative approach, strong attention to detail, and the ability to deliver
+                impactful results.
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">PD</div>
+                <div class="author-info">
+                  <strong>Preethi Durga</strong>
+                  <span>Owner & Instructor, Kumon</span>
+                </div>
+                <div class="author-stars" aria-label="5 star rating">★★★★★</div>
+              </div>
+            </div>
           </div>
-          <div class="author-stars" aria-label="5 star rating">★★★★★</div>
         </div>
 
-        <div class="testimonial-dots">
-          <span class="t-dot active" id="tdot-0"></span>
-          <span class="t-dot" id="tdot-1"></span>
-          <span class="t-dot" id="tdot-2"></span>
+        <div class="testimonial-nav">
+          <div class="testimonial-dots">
+            <span class="t-dot active" id="tdot-0"></span>
+            <span class="t-dot" id="tdot-1"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -582,7 +653,8 @@
           <span>Ready to build</span>
           <span>your brand?</span>
         </h2>
-        <p class="cta-sub">Let's create something extraordinary together. Reach out and let's talk about your vision.</p>
+        <p class="cta-sub">Let's create something extraordinary together. Reach out and let's talk about your vision.
+        </p>
         <div class="cta-buttons">
           <!-- <a href="mailto:hello@esdesignlab.com" class="btn btn-primary btn-lg" id="cta-email">
             <span>hello@esdesignlab.com</span>
@@ -591,9 +663,13 @@
           <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg" id="cta-whatsapp">WhatsApp Us</a> -->
           <a href="mailto:Info@esdesignlab.com" class="btn btn-primary btn-lg" id="cta-email">
             <span>Info@esdesignlab.com</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </a>
-          <a href="https://wa.me/917668182139" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg btn-purple-hover" id="cta-whatsapp">WhatsApp Us</a>
+          <a href="https://wa.me/917668182139" target="_blank" rel="noopener noreferrer"
+            class="btn btn-ghost btn-lg btn-purple-hover" id="cta-whatsapp">WhatsApp Us</a>
         </div>
       </div>
     </div>
@@ -611,7 +687,7 @@
             <span class="logo-text">Design Lab</span> -->
             <img src="logo.png" alt="ES Design Lab Logo" style="height: 60px; width: auto; object-fit: contain;">
           </div>
-          <p class="footer-tagline">Where Ideas are Tested  & Built.<br/>Right side part adjust according.</p>
+          <p class="footer-tagline">Where Ideas are Tested & Built.<br /> </p>
         </div>
 
         <div class="footer-links-group">
@@ -641,14 +717,35 @@
       <div class="footer-bottom">
         <span>© 2024 ES Design Lab. All rights reserved.</span>
         <div class="footer-social">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-ig" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-ig"
+            aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
           </a>
-          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" id="social-be" aria-label="Behance">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12.5H13C14.105 12.5 15 11.605 15 10.5C15 9.395 14.105 8.5 13 8.5H5V18H13.5C14.881 18 16 16.881 16 15.5C16 14.119 14.881 13 13.5 13H9V12.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M14 7H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 11.5C19 13.433 17.433 15 15.5 15C13.567 15 12 13.433 12 11.5C12 9.567 13.567 8 15.5 8C17.433 8 19 9.567 19 11.5Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" id="social-be"
+            aria-label="Behance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 12.5H13C14.105 12.5 15 11.605 15 10.5C15 9.395 14.105 8.5 13 8.5H5V18H13.5C14.881 18 16 16.881 16 15.5C16 14.119 14.881 13 13.5 13H9V12.5Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M14 7H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M19 11.5C19 13.433 17.433 15 15.5 15C13.567 15 12 13.433 12 11.5C12 9.567 13.567 8 15.5 8C17.433 8 19 9.567 19 11.5Z"
+                stroke="currentColor" stroke-width="1.5" />
+            </svg>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-li" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 17V13C11 11.343 12.343 10 14 10C15.657 10 17 11.343 17 13V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="7" cy="7.5" r="1" fill="currentColor"/></svg>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-li"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5" />
+              <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M11 17V13C11 11.343 12.343 10 14 10C15.657 10 17 11.343 17 13V17" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="7" cy="7.5" r="1" fill="currentColor" />
+            </svg>
           </a>
         </div>
       </div>
@@ -657,4 +754,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

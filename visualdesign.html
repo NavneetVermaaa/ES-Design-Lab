@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ES Design Lab — Professional visual design and video editing services that make people pause and feel something." />
+  <title>Visual Design & Video — ES Design Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ PRELOADER ══════════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="logo.png" alt="Loading Logo" style="height: 60px; width: auto; object-fit: contain;">
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-label">Loading Experience</p>
+    </div>
+  </div>
+
+  <!-- ══════════════ CUSTOM CURSOR ══════════════ -->
+  <div id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- ══════════════ NOISE OVERLAY ══════════════ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo-link" aria-label="ES Design Lab Home">
+        <img src="logo.png" alt="ES Design Lab Logo" style="height: 48px; width: auto; object-fit: contain;">
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#work" class="nav-link" id="nav-work">Work</a>
+        <a href="index.html#services" class="nav-link" id="nav-services">Services</a>
+        <a href="index.html#about" class="nav-link" id="nav-about">About</a>
+        <a href="#contact" class="nav-link nav-cta" id="nav-contact">Let's Talk</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a href="index.html#work" class="mobile-nav-link" id="m-work">Work</a>
+      <a href="index.html#services" class="mobile-nav-link" id="m-services">Services</a>
+      <a href="index.html#about" class="mobile-nav-link" id="m-about">About</a>
+      <a href="#contact" class="mobile-nav-link" id="m-contact">Let's Talk</a>
+    </div>
+    <div class="mobile-menu-footer">
+      <span>© 2024 ES Design Lab</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ HERO SECTION ══════════════ -->
+  <section id="hero" class="hero-section branding-hero" aria-label="Visual Design Hero">
+    <div class="hero-blob" aria-hidden="true">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8F65FB" />
+            <stop offset="100%" stop-color="#E6FF00" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#blobGrad)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-0.9C87,14.5,81.4,29,73.1,41.8C64.8,54.6,53.8,65.7,40.5,73.4C27.2,81.1,11.6,70.3,-2.3,79.4C-16.2,88.5,-30.6,117.5,-41.8,115.8C-53,114.1,-61,81.7,-68.2,54.5C-75.4,27.3,-81.8,4.3,-80.7,-18.2C-79.6,-40.7,-71,-62.7,-56.6,-72.6C-42.2,-82.5,-21.1,-80.3,-2.7,-75.7C15.7,-71.1,30.6,-83.6,44.7,-76.4Z" transform="translate(200 200)" />
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="eyebrow-text">Visual Design & Video</span>
+        </div>
+        <h1 class="hero-headline">
+          <span class="hero-line" style="color: #fff;">Design That Makes People</span>
+          <span class="hero-line" style="color: #fff;">Pause — and <span style="color: #8F65FB;">Feel</span></span>
+          <span class="hero-line" style="color: #fff;">Something.</span>
+        </h1>
+        <p class="hero-sub">
+          At ES Design Lab, visual design isn't about getting approval. It's about getting a reaction.
+          We design visuals that guide the eye, simplify the message, and make the experience feel effortless.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="50">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="95">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Client Retention</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+        <div class="hero-scroll-hint" aria-label="Scroll down">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ DESIGN PHILOSOPHY ══════════════ -->
+  <section class="brand-intro-section">
+    <div class="container">
+      <div class="brand-intro-grid">
+        <div class="brand-intro-text">
+          <h2 class="brand-intro-headline">Every design decision is driven by one question:</h2>
+          <p class="brand-intro-body brand-intro-quote">What should the viewer understand, feel, or do next?</p>
+          <p class="brand-intro-body">No vanity. No decoration.</p>
+          <p class="brand-intro-body">Just clear, intentional design built from the audience's point of view.</p>
+        </div>
+        <div class="brand-intro-visual">
+          <div class="brand-circle brand-circle-visual">
+            <div class="brand-circle-inner">
+              <span>Visual</span>
+              <span>Clarity</span>
+              <span>Impact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ WHERE DESIGN SHOWS UP ══════════════ -->
+  <section class="brand-process-section" id="visual-design" aria-label="Visual Design Areas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Visual Design</div>
+        <h2 class="section-title reveal-text">
+          <span>Where Visual Design</span>
+          <span>Shows Up</span>
+        </h2>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-card" id="design-1">
+          <div class="process-number">01</div>
+          <div class="process-content">
+            <h3 class="process-title">Brochures & Reports</h3>
+            <p class="process-desc">Design that's structured, readable, and engaging — turning information into understanding.</p>
+          </div>
+        </div>
+
+        <div class="process-card" id="design-2">
+          <div class="process-number">02</div>
+          <div class="process-content">
+            <h3 class="process-title">Marketing Materials</h3>
+            <p class="process-desc">Visuals that stand out and communicate — built to attract attention and drive action.</p>
+          </div>
+        </div>
+
+        <div class="process-card" id="design-3">
+          <div class="process-number">03</div>
+          <div class="process-content">
+            <h3 class="process-title">Retail & Packaging</h3>
+            <p class="process-desc">Design that signals quality, builds desire, and creates an emotional connection at first glance.</p>
+          </div>
+        </div>
+
+        <div class="process-card" id="design-4">
+          <div class="process-number">04</div>
+          <div class="process-content">
+            <h3 class="process-title">Exhibitions & Point of Sale</h3>
+            <p class="process-desc">High-impact visuals that consider the full journey — from first look to final decision.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ VIDEO EDITING INTRO ══════════════ -->
+  <section class="brand-intro-section video-intro-section">
+    <div class="container">
+      <div class="brand-intro-grid brand-intro-grid-reverse">
+        <div class="brand-intro-visual">
+          <div class="brand-circle brand-circle-video">
+            <div class="brand-circle-inner">
+              <span>Moment</span>
+              <span>Emotion</span>
+              <span>Flow</span>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro-text">
+          <div class="section-tag" style="text-align: left; margin-bottom: 1rem;">Video Editing</div>
+          <h2 class="brand-intro-headline">Editing That Turns Moments into Meaning.</h2>
+          <p class="brand-intro-body">Video isn't about effects. It's about timing, emotion, and flow.</p>
+          <p class="brand-intro-body">At ES Design Lab, we edit videos to feel natural, intentional, and human — so the message lands without feeling forced.</p>
+          <p class="brand-intro-body brand-intro-highlight">Because when a video feels right, people stay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ HOW WE EDIT ══════════════ -->
+  <section class="brand-process-section" id="video-edit" aria-label="Video Editing Process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How We Edit</div>
+        <h2 class="section-title reveal-text">
+          <span>We treat video like a conversation,</span>
+          <span>not a performance.</span>
+        </h2>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <div class="process-content">
+            <h3 class="process-title">Pacing</h3>
+            <p class="process-desc">Our editing approach focuses on pacing that holds attention throughout the viewer's journey.</p>
+          </div>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <div class="process-content">
+            <h3 class="process-title">Storytelling</h3>
+            <p class="process-desc">We craft storytelling that feels effortless, letting your message connect naturally with the audience.</p>
+          </div>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <div class="process-content">
+            <h3 class="process-title">Clarity</h3>
+            <p class="process-desc">We maintain clarity that keeps viewers engaged, removing the unnecessary and highlighting what matters.</p>
+          </div>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <div class="process-content">
+            <h3 class="process-title">Breath</h3>
+            <p class="process-desc">We let the story breathe — giving moments space to resonate without overwhelming the viewer.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ WHERE VIDEO WORKS BEST ══════════════ -->
+  <section class="video-best-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Applications</div>
+        <h2 class="section-title reveal-text">
+          <span>Where Video</span>
+          <span>Works Best</span>
+        </h2>
+      </div>
+
+      <div class="video-list-grid">
+        <div class="video-list-item">
+          <span class="video-list-icon">•</span>
+          <span>Personal brand & creator content</span>
+        </div>
+        <div class="video-list-item">
+          <span class="video-list-icon">•</span>
+          <span>Social media short-form videos</span>
+        </div>
+        <div class="video-list-item">
+          <span class="video-list-icon">•</span>
+          <span>Brand stories & explainers</span>
+        </div>
+        <div class="video-list-item">
+          <span class="video-list-icon">•</span>
+          <span>Promotional and campaign edits</span>
+        </div>
+      </div>
+
+      <p class="video-list-note">Every edit is designed to connect — not overwhelm.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ CTA BANNER ══════════════ -->
+  <section id="contact" class="cta-section" aria-label="Contact us">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="section-tag">Ready to Start?</div>
+        <h2 class="cta-headline reveal-text">
+          <span>Let's create visuals</span>
+          <span>that make an impact</span>
+        </h2>
+        <p class="cta-sub">Ready to bring your vision to life? Let's talk about your project.</p>
+        <div class="cta-buttons">
+          <a href="mailto:Info@esdesignlab.com" class="btn btn-primary btn-lg" id="cta-email">
+            <span>Info@esdesignlab.com</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/917668182139" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg btn-purple-hover" id="cta-whatsapp">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer" role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="logo.png" alt="ES Design Lab" style="height: 48px; width: auto;">
+          </a>
+          <p class="footer-tagline">Where Ideas are Tested & Built.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Work</h4>
+            <a href="index.html#work">Portfolio</a>
+            <a href="index.html#work">Case Studies</a>
+            <a href="index.html#work">Our Process</a>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="branding.html">Branding</a>
+            <a href="visualdesign.html">Visual Design</a>
+            <a href="visualdesign.html#video-edit">Video Editing</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="mailto:Info@esdesignlab.com">Email Us</a>
+            <a href="https://wa.me/917668182139" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024 ES Design Lab. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Behance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12.5H13C14.105 12.5 15 11.605 15 10.5C15 9.395 14.105 8.5 13 8.5H5V18H13.5C14.881 18 16 16.881 16 15.5C16 14.119 14.881 13 13.5 13H9V12.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M14 7H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 11.5C19 13.433 17.433 15 15.5 15C13.567 15 12 13.433 12 11.5C12 9.567 13.567 8 15.5 8C17.433 8 19 9.567 19 11.5Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 17V13C11 11.343 12.343 10 14 10C15.657 10 17 11.343 17 13V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="7" cy="7.5" r="1" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

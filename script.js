@@ -422,6 +422,95 @@ function initScrollReveals() {
 }
 
 /* ──────────────────────────────────────────────
+   TESTIMONIAL SLIDER
+────────────────────────────────────────────── */
+function initTestimonialSlider() {
+  const slider = qs('#testimonial-slider');
+  if (!slider) return;
+
+  const slides = qsAll('.testimonial-slide');
+  const dots = qsAll('.t-dot');
+  const prevBtn = qs('#testi-prev');
+  const nextBtn = qs('#testi-next');
+  let currentIndex = 0;
+  let autoSlideInterval;
+  let isAnimating = false;
+
+  function goToSlide(index, direction = 'next') {
+    if (isAnimating || index === currentIndex) return;
+    isAnimating = true;
+
+    const prevIndex = currentIndex;
+    const prevSlide = slides[prevIndex];
+    const nextSlide = slides[index];
+
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active', 'prev');
+      dots[i].classList.remove('active');
+    });
+
+    prevSlide.classList.add(direction === 'next' ? 'prev' : '');
+    nextSlide.classList.add('active');
+    dots[index].classList.add('active');
+
+    currentIndex = index;
+
+    setTimeout(() => {
+      prevSlide.classList.remove('prev');
+      isAnimating = false;
+    }, 600);
+  }
+
+  function nextSlide() {
+    const next = (currentIndex + 1) % slides.length;
+    goToSlide(next, 'next');
+  }
+
+  function prevSlide() {
+    const prev = (currentIndex - 1 + slides.length) % slides.length;
+    goToSlide(prev, 'prev');
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      const direction = index > currentIndex ? 'next' : 'prev';
+      goToSlide(index, direction);
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  });
+
+  slider.addEventListener('mouseenter', stopAutoSlide);
+  slider.addEventListener('mouseleave', startAutoSlide);
+
+  startAutoSlide();
+}
+
+/* ──────────────────────────────────────────────
    NAVBAR SCROLL BEHAVIOR
 ────────────────────────────────────────────── */
 function initNavbar() {
@@ -886,6 +975,7 @@ function init() {
   initServiceGlow();
   initParallax();
   initTestimonialDots();
+  initTestimonialSlider();
   initPortfolioHovers();
   initMarquee();
   initAboutAnimation();
